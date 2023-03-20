@@ -1,4 +1,4 @@
-package com.hanhu.springbootrabbitmq.workqueuesmanual;
+package com.hanhu.springbootrabbitmq.workqueues.workqueuesmanual;
 
 import com.hanhu.springbootrabbitmq.utils.RabbitMqUtils;
 import com.rabbitmq.client.Channel;
