@@ -73,7 +73,7 @@ public class Consumer01 {
                 channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
             }
         };
-        boolean autoAck = false;
+        boolean autoAck = false;//关闭自动应答
         channel.basicConsume(normalQueue, autoAck, deliverCallback, consumerTag -> {
         });
 
