@@ -40,7 +40,7 @@ public class SwaggerConfig {
                 .title("rabbitmq-demo")
                 .description("接口文档")
                 .termsOfServiceUrl("https://github.com/CodeTiger116")
-                .contact(new Contact("hanhu","http://localhost:8080/api/doc.html","xxx@qq.com"))
+                .contact(new Contact("hanhu","http://localhost:8080/doc.html","xxx@qq.com"))
                 .version("1.0")
                 .build();
     }
