@@ -13,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component
 public class WarningConsumer {
+
     @RabbitListener(queues = ConfirmConfig.WARNING_QUEUE)
     public void receiveQueueDead(Message message, Channel channel) {
         String msg = new String(message.getBody());

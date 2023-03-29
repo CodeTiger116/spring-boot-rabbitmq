@@ -42,7 +42,9 @@ public class ConfirmCallBack implements RabbitTemplate.ConfirmCallback ,RabbitTe
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
         if (ack) {
-            log.info("交换机已收到ID为：{} 的消息, cause:{}", correlationData.getId(), cause);
+            //correlationData.getId(),需要生产者设置CorrelationData对象中的ID属性
+            //log.info("交换机已收到ID为：{} 的消息, cause:{}", correlationData.getId(), cause);
+            log.info("交换机已收到消息, cause:{}",  cause);
         } else {
             log.info("交换机未收到ID为：{} 的消息, cause:{}", correlationData.getId(), cause);
         }
